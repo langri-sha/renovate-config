@@ -22,6 +22,7 @@ const project = new Project({
   codeowners: {
     '*': '@langri-sha',
   },
+  editorConfig: {},
   lintSynthesized: {},
   pnpmWorkspace: {},
   prettier: {},
