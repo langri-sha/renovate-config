@@ -41,6 +41,11 @@
       "type": "build"
     },
     {
+      "name": "renovate",
+      "version": "44.151.5",
+      "type": "build"
+    },
+    {
       "name": "tsx",
       "version": "4.23.15",
       "type": "build"

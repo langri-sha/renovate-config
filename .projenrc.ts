@@ -17,7 +17,11 @@ const project = new Project({
     repository: 'langri-sha/renovate-config',
 
     type: 'module',
-    devDeps: ['@langri-sha/lint-staged@0.9.11', '@langri-sha/prettier@0.4.11'],
+    devDeps: [
+      '@langri-sha/lint-staged@0.9.11',
+      '@langri-sha/prettier@0.4.11',
+      'renovate@44.151.5',
+    ],
   },
   codeowners: {
     '*': '@langri-sha',
@@ -29,6 +33,12 @@ const project = new Project({
   lintStaged: {},
   lintSynthesized: {},
   pnpmWorkspace: {
+    allowBuilds: {
+      'core-js-pure': false,
+      'dtrace-provider': false,
+      protobufjs: false,
+      re2: false,
+    },
     minimumReleaseAgeExclude: ['@langri-sha/*', ...Project.presetPackages],
   },
   prettier: {},
