@@ -5,6 +5,10 @@ allowBuilds:
   '@swc/core': false
   esbuild: false
   unrs-resolver: false
+  core-js-pure: false
+  dtrace-provider: false
+  protobufjs: false
+  re2: false
 minimumReleaseAgeExclude:
   - '@langri-sha/*'
   - '@langri-sha/projen-project'
