@@ -13,7 +13,7 @@ const project = new Project({
     homepage: 'https://github.com/langri-sha/renovate-config/#readme',
     license: 'MIT',
     licensed: true,
-    minNodeVersion: '20.0.0',
+    minNodeVersion: '24.16.0',
     repository: 'langri-sha/renovate-config',
 
     type: 'module',
