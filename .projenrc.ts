@@ -26,6 +26,7 @@ const project = new Project({
   lintSynthesized: {},
   pnpmWorkspace: {},
   prettier: {},
+  renovate: {},
 })
 
 project.package?.addEngine('pnpm', '>= 11.0.0')
