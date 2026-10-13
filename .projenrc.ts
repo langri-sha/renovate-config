@@ -23,6 +23,9 @@ const project = new Project({
     '*': '@langri-sha',
   },
   editorConfig: {},
+  husky: {
+    'pre-commit': 'pnpm --silent lint-staged',
+  },
   lintStaged: {},
   lintSynthesized: {},
   pnpmWorkspace: {
