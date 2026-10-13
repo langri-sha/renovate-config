@@ -26,7 +26,16 @@ const project = new Project({
   lintSynthesized: {},
   pnpmWorkspace: {},
   prettier: {},
-  renovate: {},
+  renovate: {
+    packageRules: [
+      {
+        description: 'Update our own packages together',
+        groupName: 'langri-sha projen toolchain',
+        groupSlug: 'langri-sha-projen',
+        matchPackageNames: ['@langri-sha/**'],
+      },
+    ],
+  },
 })
 
 project.package?.addEngine('pnpm', '>= 11.0.0')
