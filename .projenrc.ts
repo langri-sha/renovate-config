@@ -7,10 +7,12 @@ const project = new Project({
     authorName: 'Filip Dupanović',
     authorOrganization: false,
     bugsUrl: 'https://github.com/langri-sha/renovate-config/issues',
+    copyrightYear: '2026',
     description: 'Shared Renovate preset for the langri-sha repositories',
     entrypoint: '',
     homepage: 'https://github.com/langri-sha/renovate-config/#readme',
-    licensed: false,
+    license: 'MIT',
+    licensed: true,
     minNodeVersion: '20.0.0',
     repository: 'langri-sha/renovate-config',
 
