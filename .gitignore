@@ -26,4 +26,5 @@ node_modules/
 !/.editorconfig
 !/license
 !/pnpm-workspace.yaml
+!/renovate.json5
 !/.projenrc.ts
