@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Rules shared by the langri-sha fleet for our own packages",
+  "packageRules": [
+    {
+      "description": "Update our own packages together",
+      "groupName": "langri-sha projen toolchain",
+      "groupSlug": "langri-sha-projen",
+      "matchPackageNames": ["@langri-sha/**"]
+    },
+    {
+      "description": "Install our own packages without waiting them out",
+      "matchPackageNames": ["@langri-sha/**"],
+      "minimumReleaseAge": null
+    },
+    {
+      "description": "Install our own GitHub Actions and Terraform modules without waiting them out",
+      "matchPackageNames": ["langri-sha/**"],
+      "minimumReleaseAge": null
+    }
+  ]
+}
