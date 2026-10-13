@@ -47,6 +47,7 @@ const project = new Project({
       },
     ],
   },
+  typeScriptConfig: {},
 })
 
 project.package?.addEngine('pnpm', '>= 11.0.0')
