@@ -1,0 +1,25 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  preset:
+    name: Renovate preset
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Setup PNPM
+        uses: langri-sha/github/actions/pnpm@v0.24.0
+
+      - name: Validate the preset
+        run: pnpm exec renovate-config-validator --strict default.json
