@@ -9,6 +9,7 @@
     ".projen/tasks.json",
     "CODEOWNERS",
     "license",
+    "lint-staged.config.js",
     "pnpm-workspace.yaml",
     "prettier.config.js",
     "renovate.json5"
