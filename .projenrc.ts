@@ -24,7 +24,9 @@ const project = new Project({
   },
   editorConfig: {},
   lintSynthesized: {},
-  pnpmWorkspace: {},
+  pnpmWorkspace: {
+    minimumReleaseAgeExclude: ['@langri-sha/*', ...Project.presetPackages],
+  },
   prettier: {},
   renovate: {
     packageRules: [
@@ -33,6 +35,11 @@ const project = new Project({
         groupName: 'langri-sha projen toolchain',
         groupSlug: 'langri-sha-projen',
         matchPackageNames: ['@langri-sha/**'],
+      },
+      {
+        description: 'Install our own packages without waiting them out',
+        matchPackageNames: ['@langri-sha/**'],
+        minimumReleaseAge: null,
       },
     ],
   },

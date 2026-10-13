@@ -33,6 +33,11 @@
       groupSlug: 'langri-sha-projen',
       matchPackageNames: ['@langri-sha/**'],
     },
+    {
+      description: 'Install our own packages without waiting them out',
+      matchPackageNames: ['@langri-sha/**'],
+      minimumReleaseAge: null,
+    },
   ],
   customManagers: [
     {
