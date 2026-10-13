@@ -11,7 +11,7 @@
     "type": "git",
     "url": "langri-sha/renovate-config"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": {
     "name": "Filip Dupanović",
     "email": "filip.dupanovic@gmail.com",
