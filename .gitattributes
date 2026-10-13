@@ -8,6 +8,7 @@
 /.projen/** linguist-generated
 /CODEOWNERS linguist-generated
 /license linguist-generated
+/lint-staged.config.js linguist-generated
 /package.json linguist-generated
 /pnpm-lock.yaml linguist-generated
 /pnpm-workspace.yaml linguist-generated

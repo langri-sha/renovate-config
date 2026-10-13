@@ -17,12 +17,13 @@ const project = new Project({
     repository: 'langri-sha/renovate-config',
 
     type: 'module',
-    devDeps: ['@langri-sha/prettier@0.4.11'],
+    devDeps: ['@langri-sha/lint-staged@0.9.11', '@langri-sha/prettier@0.4.11'],
   },
   codeowners: {
     '*': '@langri-sha',
   },
   editorConfig: {},
+  lintStaged: {},
   lintSynthesized: {},
   pnpmWorkspace: {
     minimumReleaseAgeExclude: ['@langri-sha/*', ...Project.presetPackages],
