@@ -19,7 +19,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup PNPM
-        uses: langri-sha/github/actions/pnpm@v0.24.0
+        uses: langri-sha/github/actions/pnpm@v0.30.0
 
       - name: Validate the preset
         run: pnpm exec renovate-config-validator --strict default.json
