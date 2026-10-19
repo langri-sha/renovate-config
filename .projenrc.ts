@@ -69,7 +69,7 @@ const project = new Project({
 })
 
 project.package?.addEngine('pnpm', '>= 11.0.0')
-project.package?.addField('packageManager', 'pnpm@12.11.2')
+project.package?.addField('packageManager', 'pnpm@12.14.0')
 project.package?.addField('private', true)
 
 project.synth()
