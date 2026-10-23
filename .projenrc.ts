@@ -23,6 +23,11 @@ const project = new Project({
       'renovate@44.171.1',
     ],
   },
+  claude: {
+    settings: {
+      attribution: { commit: '', pr: '', sessionUrl: false },
+    },
+  },
   codeowners: {
     '*': '@langri-sha',
   },
