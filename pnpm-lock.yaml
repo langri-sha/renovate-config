@@ -191,8 +191,8 @@ importers:
         specifier: 0.104.1
         version: 0.104.1(constructs@10.8.1)
       renovate:
-        specifier: 44.176.0
-        version: 44.176.0(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.176.2
+        version: 44.176.2(supports-color@7.2.0)(typanion@3.14.0)
       tsx:
         specifier: 4.23.15
         version: 4.23.15
@@ -872,8 +872,8 @@ packages:
       '@opentelemetry/api':
         optional: true
 
-  '@renovatebot/base-image@13.139.0':
-    resolution: {integrity: sha512-YleoS1GNqeOs98/g+ZDAh1Kk0KSlUZl61yNaAh6FVAUq1sdVjXn2ADiMKOfqg9PPG678mSdzoHkOWRhKyHSzPw==}
+  '@renovatebot/base-image@13.139.1':
+    resolution: {integrity: sha512-o86Yh6XSBQc8nIwvVMphKfHYo6rUltxRss6QrkVi5C1lYSe+vHFnsyF2VtIax0oEt/WUxBJ4AYt1sPPXAIbTUw==}
     engines: {node: '>=24.10.0'}
     peerDependencies:
       zod: ^4.0.0
@@ -1091,8 +1091,8 @@ packages:
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  argparse@3.0.2:
-    resolution: {integrity: sha512-mFdDM6WqWKraGLsVb+C9CahPnzTXOefAOLq3jYcca2YZ8bEWpr++Tzj+zSaKW9+X9L5uSxcm1AZ3Y6aZJ09OhQ==}
+  argparse@3.0.3:
+    resolution: {integrity: sha512-Sn98ftV3KfsO8xfLPHG6oT8y+b0yvbrLgZjgPDXsharNY15tTAjqIsIju4S32nl6/iEUNNE4v+yL2Zhm8ooP3w==}
 
   async-mutex@0.5.0:
     resolution: {integrity: sha512-1A94B18jkJ3DYq284ohPxoXbfTA5HsQ7/Mf4DEhcyLx3Bz27Rh59iScbB6EPiP+B+joue6YCxcMXSbFC1tZKwA==}
@@ -1910,8 +1910,8 @@ packages:
     resolution: {integrity: sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew==}
     engines: {node: '>=12'}
 
-  markdown-it@15.0.2:
-    resolution: {integrity: sha512-q4IGxMv56jCqT4OCRCADBoDP3LO4MhmTXjFbphHPXs4g3j9Xg5RDnxqN8IF/3vIWEU+VCnUq+7JUg/cfy2E6Qw==}
+  markdown-it@15.0.3:
+    resolution: {integrity: sha512-+Az7Ojz3iRGu8KYMvJ6xVhvrxP3eE+vEtJX75Ow88XBpcQNV/0lGX5ZynIIBftREo4DC2jsveAMDaeltmm8QvQ==}
     hasBin: true
 
   markdown-table@3.0.4:
@@ -2566,8 +2566,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.176.0:
-    resolution: {integrity: sha512-jM3DI14vXVV/n0+WtEECNbvzqcLAGiKTTQSeXurt9+eZ+1lQTr3TX95FCLZL7ly387qoZpdD8EwpLkVHNVjvwA==}
+  renovate@44.176.2:
+    resolution: {integrity: sha512-vdq/kMWY91UgerWK8YY/G4UCDY5EmoDb1bb+aANd9333K5o/kz+uEJTTDqT26xlxmj8RWsxQUnQVYz3pkHCuyw==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3743,7 +3743,7 @@ snapshots:
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
 
-  '@renovatebot/base-image@13.139.0(zod@4.6.7)':
+  '@renovatebot/base-image@13.139.1(zod@4.6.7)':
     dependencies:
       '@containerbase/base': 14.49.0(zod@4.6.7)
     optionalDependencies:
@@ -4003,7 +4003,7 @@ snapshots:
 
   argparse@2.0.1: {}
 
-  argparse@3.0.2: {}
+  argparse@3.0.3: {}
 
   async-mutex@0.5.0:
     dependencies:
@@ -4878,9 +4878,9 @@ snapshots:
 
   luxon@3.7.2: {}
 
-  markdown-it@15.0.2:
+  markdown-it@15.0.3:
     dependencies:
-      argparse: 3.0.2
+      argparse: 3.0.3
       entities: 8.1.0
       linkify-it: 6.1.0
       mdurl: 2.1.0
@@ -5656,7 +5656,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.176.0(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.176.2(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5689,7 +5689,7 @@ snapshots:
       '@pnpm/parse-overrides': 1001.0.4
       '@qnighy/marshal': 0.1.3
       '@redis/client': 6.3.0(@opentelemetry/api@1.9.1)
-      '@renovatebot/base-image': 13.139.0(zod@4.6.7)
+      '@renovatebot/base-image': 13.139.1(zod@4.6.7)
       '@renovatebot/detect-tools': 4.0.23
       '@renovatebot/good-enough-parser': 2.0.1
       '@renovatebot/osv-offline': 3.0.12(supports-color@7.2.0)
@@ -5743,7 +5743,7 @@ snapshots:
       jsonc-weaver: 0.3.1
       klona: 2.0.6
       luxon: 3.7.2
-      markdown-it: 15.0.2
+      markdown-it: 15.0.3
       markdown-table: 3.0.4
       minimatch: 10.2.6
       moo: 0.5.3
