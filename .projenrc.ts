@@ -33,6 +33,7 @@ const project = new Project({
   },
   dagger: {},
   editorConfig: {},
+  githubTemplates: {},
   husky: {
     'pre-commit': 'pnpm --silent lint-staged',
   },
