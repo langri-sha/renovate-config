@@ -42,7 +42,7 @@
     },
     {
       "name": "renovate",
-      "version": "44.181.1",
+      "version": "44.181.3",
       "type": "build"
     },
     {
