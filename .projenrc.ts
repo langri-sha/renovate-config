@@ -20,7 +20,7 @@ const project = new Project({
     devDeps: [
       '@langri-sha/lint-staged@0.9.11',
       '@langri-sha/prettier@0.4.11',
-      'renovate@44.181.0',
+      'renovate@44.181.1',
     ],
   },
   claude: {
