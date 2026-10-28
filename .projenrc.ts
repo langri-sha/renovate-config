@@ -73,6 +73,7 @@ const project = new Project({
   typeScriptConfig: {},
   worktrunk: {},
   skills: {
+    ignore: false,
     skills: [
       {
         source: 'langri-sha/skills',
