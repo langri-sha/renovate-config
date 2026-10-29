@@ -75,6 +75,15 @@ const project = new Project({
         matchUpdateTypes: ['digest'],
         enabled: false,
       },
+      {
+        description:
+          'Merge langri-sha/skills release tag bumps once checks pass',
+        matchDepNames: ['langri-sha/skills'],
+        matchDatasources: ['github-tags'],
+        automerge: true,
+        automergeType: 'pr',
+        automergeStrategy: 'rebase',
+      },
     ],
   },
   typeScriptConfig: {},
