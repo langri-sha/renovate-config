@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Rules shared by the langri-sha fleet for our own packages",
+  "extends": ["customManagers:dockerfileVersions"],
   "packageRules": [
     {
       "description": "Update our own packages together",
