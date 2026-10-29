@@ -191,8 +191,8 @@ importers:
         specifier: 0.104.1
         version: 0.104.1(constructs@10.8.1)
       renovate:
-        specifier: 44.186.2
-        version: 44.186.2(supports-color@7.2.0)(typanion@3.14.0)
+        specifier: 44.186.3
+        version: 44.186.3(supports-color@7.2.0)(typanion@3.14.0)
       skills:
         specifier: 1.7.4
         version: 1.7.4
@@ -1289,8 +1289,8 @@ packages:
     resolution: {integrity: sha512-ixNtAJndqh173VQ4KodSdJEI6nuioBWI0V1ITNKhZZsO0pEMoDxz539T4FTTbSZ/xIOSuDnzxLVRqBVSvPNE2g==}
     engines: {node: '>=18.0'}
 
-  cronstrue@3.33.0:
-    resolution: {integrity: sha512-vyatYcfUXxPZxv8/zwC+j9LZNfSdn1k5t3sCLFZrLw+HvU6H4pNhUulPKgtji9tLTTAUCJs45z2+rJrPsbPxlw==}
+  cronstrue@3.35.0:
+    resolution: {integrity: sha512-y0h5te+3P4UKik6VNDr7dYgpZ3XdGVW9+4y1Ef75BHG582t2oYI8dXeSBzsD1jyXYMJxv1ANrOWdSfg/UE470w==}
     hasBin: true
 
   cross-spawn@7.0.6:
@@ -2602,8 +2602,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.186.2:
-    resolution: {integrity: sha512-ydWqxe3283RGRsgHHNEc8v3leX9RFUa/GtO8VhyR/uF5QONTttBAa7k2ELDTedCH3tBz6pfgEgjlmQpM06Zydg==}
+  renovate@44.186.3:
+    resolution: {integrity: sha512-jN1eCi6t+4bR4BxnjjcMYtNEB5J8n4bZoFFiaN3cycNinFxksgw0a9j8NMoVeb33MabJegONf/wsXGRweCgHPQ==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -4221,7 +4221,7 @@ snapshots:
 
   croner@10.0.1: {}
 
-  cronstrue@3.33.0: {}
+  cronstrue@3.35.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5726,7 +5726,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.186.2(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.186.3(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1139.0
       '@aws-sdk/client-ec2': 3.1139.0
@@ -5782,7 +5782,7 @@ snapshots:
       commander: 15.0.0
       common-tags: 1.8.2
       croner: 10.0.1
-      cronstrue: 3.33.0
+      cronstrue: 3.35.0
       deepmerge: 4.3.1
       dequal: 2.0.3
       detect-indent: 7.0.2
