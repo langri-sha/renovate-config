@@ -68,6 +68,13 @@ const project = new Project({
         matchPackageNames: ['langri-sha/**'],
         minimumReleaseAge: null,
       },
+      {
+        description:
+          'Skills are pinned to release tags. Leave digest updates to the tag bumps, so a merge to langri-sha/skills opens no pull request',
+        matchDepNames: ['langri-sha/skills'],
+        matchUpdateTypes: ['digest'],
+        enabled: false,
+      },
     ],
   },
   typeScriptConfig: {},
