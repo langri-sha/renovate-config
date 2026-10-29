@@ -35,7 +35,7 @@
     "lint-staged": "17.6.0",
     "prettier": "3.9.9",
     "projen": "0.104.1",
-    "renovate": "44.181.6",
+    "renovate": "44.181.7",
     "skills": "1.7.4",
     "tsx": "4.23.15",
     "typescript": "5.9.3"
