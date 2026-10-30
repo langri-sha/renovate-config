@@ -17,7 +17,7 @@ const project = new Project({
     repository: 'langri-sha/renovate-config',
 
     type: 'module',
-    devDeps: ['renovate@44.186.7'],
+    devDeps: ['renovate@44.188.1'],
   },
   claude: {
     settings: {
