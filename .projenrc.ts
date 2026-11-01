@@ -17,7 +17,7 @@ const project = new Project({
     repository: 'langri-sha/renovate-config',
 
     type: 'module',
-    devDeps: ['renovate@44.197.0'],
+    devDeps: ['renovate@44.197.1'],
   },
   changesets: {
     config: { privatePackages: { version: true, tag: true } },
