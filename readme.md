@@ -40,7 +40,7 @@ renovate: {
 The reference is not pinned. Renovate loads `default.json` from this
 repository's default branch, so a change reaches every repository that extends
 it on its next Renovate run, subject to caching and to the repository's own
-rules. There is no release to publish and nothing to bump.
+rules. Releases of this repository only tag versions; consumers don't pin them.
 
 The preset only reaches Renovate. pnpm applies its own `minimumReleaseAge` when
 installing, so a repository that uses it also lists `@langri-sha/*` in
@@ -51,6 +51,12 @@ installing, so a repository that uses it also lists `@langri-sha/*` in
 Keep policy that every repository shares here, and behaviour specific to one
 repository in that repository. Say which dependencies a change touches in the
 pull request.
+
+Every pull request carries a change file, from `pnpm changeset`. Changes that
+release nothing, such as dependency and tooling updates, get an empty one
+(`pnpm exec changeset --empty`). Dispatching the Release workflow consumes the
+change files, commits the version bump to `main`, tags `vX.Y.Z` and creates the
+GitHub release. Never tag by hand.
 
 CI validates the preset with:
 
