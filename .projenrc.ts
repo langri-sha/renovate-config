@@ -19,6 +19,9 @@ const project = new Project({
     type: 'module',
     devDeps: ['renovate@44.192.2'],
   },
+  changesets: {
+    config: { privatePackages: { version: true, tag: true } },
+  },
   claude: {
     settings: {
       attribution: { commit: '', pr: '', sessionUrl: false },
