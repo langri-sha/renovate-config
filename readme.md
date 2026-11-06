@@ -4,7 +4,7 @@ The shared Renovate preset for the langri-sha repositories. It holds the rules
 that treat our own packages alike everywhere, and leaves each repository's
 baseline configuration and exceptions to the repository.
 
-[`default.json`](default.json) does three things:
+[`default.json`](default.json) does the following:
 
 - Groups updates to `@langri-sha/**` packages under **langri-sha projen
   toolchain**, so they arrive as one pull request.
@@ -14,6 +14,7 @@ baseline configuration and exceptions to the repository.
 - Tracks versions pinned in a Dockerfile `ARG` that follows a
   `# renovate: datasource=… depName=…` comment, through Renovate's
   `customManagers:dockerfileVersions` preset.
+- Holds `typescript` below 7, until typescript-eslint and jsii support it.
 
 It does not enable automerge, and it does not extend `config:recommended`.
 
