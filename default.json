@@ -32,6 +32,11 @@
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "rebase"
+    },
+    {
+      "description": "Hold TypeScript below 7 until typescript-eslint and jsii support it, then lift this rule",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
     }
   ]
 }
