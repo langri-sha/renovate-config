@@ -14,6 +14,7 @@ baseline configuration and exceptions to the repository.
 - Tracks versions pinned in a Dockerfile `ARG` that follows a
   `# renovate: datasource=… depName=…` comment, through Renovate's
   `customManagers:dockerfileVersions` preset.
+- Runs lock file maintenance on Saturday, UTC.
 - Holds `typescript` below 7, until typescript-eslint and jsii support it.
 
 It does not enable automerge, and it does not extend `config:recommended`.
