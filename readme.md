@@ -56,11 +56,13 @@ pull request.
 
 Every pull request carries a change file, from `pnpm changeset`. Changes that
 release nothing, such as dependency and tooling updates, get an empty one
-(`pnpm exec changeset --empty`). Dispatching the Release workflow consumes the
-change files, commits the version bump to `main`, tags `vX.Y.Z` and creates the
-GitHub release. Never tag by hand. The `changesets` checks of `dagger check`
-fail locally without the `.merge-base` that `langri-sha/github`'s `merge-base`
-action writes.
+(`pnpm exec changeset --empty`). A change to `default.json` reaches every
+consumer on merge, so its pull request needs a change file with a description,
+and the `Renovate preset` check fails without one. Dispatching the Release
+workflow consumes the change files, commits the version bump to `main`, tags
+`vX.Y.Z` and creates the GitHub release. Never tag by hand. The `changesets`
+checks of `dagger check` fail locally without the `.merge-base` that
+`langri-sha/github`'s `merge-base` action writes.
 
 CI validates the preset with:
 
