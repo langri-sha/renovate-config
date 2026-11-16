@@ -15,6 +15,12 @@ baseline configuration and exceptions to the repository.
   `# renovate: datasource=… depName=…` comment, through Renovate's
   `customManagers:dockerfileVersions` preset.
 - Runs lock file maintenance on Saturday, UTC.
+- Rebases pull requests only when they conflict, so a merge to the default
+  branch doesn't rerun checks on every open pull request. Release tag bumps of
+  `langri-sha/skills` merge themselves, so they still rebase whenever they fall
+  behind. A repository that turns on automerge sets `rebaseWhen` to
+  `behind-base-branch` with it, as Renovate's pull request automerge doesn't
+  check that a branch is up to date.
 - Holds `typescript` below 7, until typescript-eslint and jsii support it.
 
 It does not enable automerge, and it does not extend `config:recommended`.

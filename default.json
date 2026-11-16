@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Rules shared by the langri-sha fleet for our own packages",
   "extends": ["customManagers:dockerfileVersions"],
+  "rebaseWhen": "conflicted",
   "lockFileMaintenance": {
     "schedule": ["on saturday"]
   },
@@ -34,7 +35,8 @@
       "matchDatasources": ["github-tags"],
       "automerge": true,
       "automergeType": "pr",
-      "automergeStrategy": "rebase"
+      "automergeStrategy": "rebase",
+      "rebaseWhen": "behind-base-branch"
     },
     {
       "description": "Hold TypeScript below 7 until typescript-eslint and jsii support it, then lift this rule",
